@@ -1,0 +1,31 @@
+{
+  "name": "bot-zerodevx-com",
+  "version": "0.1.0",
+  "description": "Bots Nerve Centre",
+  "author": "Jason Lee <jason@zerodevx.com>",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "lint": "prettier --check . && eslint",
+    "test": "npm run lint && node --test"
+  },
+  "dependencies": {
+    "grammy": "^1.41.1",
+    "hono": "^4.12.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260317.1",
+    "@eslint/js": "^10.0.1",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
+    "eslint": "^10.0.3",
+    "globals": "^17.4.0",
+    "prettier": "^3.8.1",
+    "wrangler": "^4.75.0"
+  },
+  "type": "module",
+  "exports": "./index.js",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/zerodevx/bot-zerodevx-com",
+  "repository": "github:zerodevx/bot-zerodevx-com"
+}
